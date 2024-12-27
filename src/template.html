@@ -10,12 +10,35 @@
     <div id="mainContainer">
       <div id="optionsContainer">
         <button id="NewTask">New Task</button>
-        <button id="Today">Today</button>
-        <button id="Settings">Settings</button>
+        <button id="newProject">Add Project</button>
+        <button id="showAllProjects">Show All</button>
+        <button id="defaultProject">Default</button>
       </div>
       <div id="Tasks">
-        
+
+
       </div>
+
+      <dialog id="createNewtask">
+        <div id="createNewTaskContainer">
+            <label for="description">Task</label>
+            <input type="text" id="description" placeholder="To Do...">
+            <button id="cancel">X</button>
+            <label for="duedate">Due Date</label>
+            <input type="date" id="duedate">
+            <label for="projectNum">Project</label>
+            <select name="Projects" id="projectsList">
+              <option value="Default">Default</option>
+            </select>
+            <button id="add">Add task</button>
+        </div>
+      </dialog>
+
+      <dialog id="createNewProject">
+        <input type="text" id="projectName">
+        <button id="addProject">Add Project</button>
+        <button id="cancelProject">cancel</button>
+      </dialog>
     </div>
   </body>
 </html>

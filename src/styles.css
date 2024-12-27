@@ -1,6 +1,8 @@
 html
 {
     font-size: 16px;
+    --buttonHover: rgb(173, 216, 230);
+    
 }
 #mainContainer
 {
@@ -29,7 +31,62 @@ button
     border: none;
 }
 
-button:hover
+#optionsContainer button:hover
 {
-    background-color: rgb(173, 216, 230);
+    background-color: var(--buttonHover)
+}
+
+#add:hover
+{
+    background-color: var(--buttonHover);
+}
+#createNewtask
+{
+
+    border-radius: 2rem;
+
+}
+
+#createNewTaskContainer
+{
+    display:grid;
+    grid-template-columns: .5fr 1fr min-content;
+    gap: .5rem;
+}
+#cancel
+{
+    width: 2rem;
+    border-radius: 2rem;
+    justify-self: end;
+    background-color: rgba(240, 128, 128, 0.774);
+}
+#cancel:hover
+{
+    background-color: rgba(255,128,128,.800);
+}
+
+
+#add
+{
+    grid-row: 3;
+    grid-column: 1 / 3;
+    width: 100%;
+}
+
+
+#Tasks
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 2rem;
+    grid-auto-rows: 3rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.completeButton
+{
+    width: 2rem;
+    border-radius: 2rem;
+    background-color: rgb(220, 255, 220);
+
 }
