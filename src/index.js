@@ -3,8 +3,7 @@ import { createTaskDivs } from "./newTask";
 import {
   addToGrid,
   projectGrid,
-  defaultGrid,
-  buildTaskFromStorage,
+  defaultGrid
 } from "./addToGrid";
 import { writeToStorage, readFromStorage } from "./checkStorage";
 
